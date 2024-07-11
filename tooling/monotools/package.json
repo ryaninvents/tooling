@@ -1,0 +1,24 @@
+{
+  "name": "@ryainvents/monotools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "cli.dev": "tsx src/main.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@pnpm/find-workspace-dir": "^7.0.1",
+    "@pnpm/workspace.find-packages": "^4.0.1",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "json5": "^2.2.3"
+  },
+  "devDependencies": {
+    "tsx": "^4.16.0"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "@ryaninvents/cli-registry",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p ./tsconfig.build.json",
+    "check.types": "tsc --noEmit -p tsconfig.json"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "default": "./dist/index.js",
+      "types": "./src/index.ts"
+    }
+  },
+  "dependencies": {
+    "type-fest": "^4.2.0"
+  },
+  "devDependencies": {
+    "commander": "^11.1.0",
+    "tslib": "^2.6.2",
+    "typescript": "5.3.2"
+  }
+}
